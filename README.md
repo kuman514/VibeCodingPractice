@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VibeCodingPractice
+Claude Code와 [VibeStart](https://vibe-start.com/)로 실험용 프로젝트를 만드는 연습 레포지토리.
 
-## Getting Started
+## 바이브코딩 하는 방법
+- 설치되어야 하는 프로그램
+  - 코딩 도구 (예: Visual Studio Code 또는 Cursor 등등)
+  - 코딩 에이전트 (예: Claude Code 또는 Codex 등등)
+    - 진행 조건
+      - Claude Pro 플랜(Claude Code) 또는 ChatGPT Pro 플랜(Codex) 결제를 필요로 한다.
+    - 설치 방법 (Claude 기준)
+      - Node.js 최신버전 설치 (당시 v24.x.x)
+      - `npm install -g @anthropic-ai/claude-code` 명령어 실행
+      - `claude` 명령어 실행 및 Claude Pro 이상 플랜 가입 계정으로 로그인하여 인증
+- `CLAUDE.md` 파일을 작성하여 Project Architecture Rules를 정의한다.
+- `claude` 명령어를 실행하여 에이전트에게 첫 마디를 남긴다.
+  - 첫마디 템플릿
+    - ```Text
+      나는 ___ 웹사이트를 만들고 싶어.
 
-First, run the development server:
+      어떤 서비스냐면:
+      ___
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+      주로 쓸 사람:
+      ___
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+      처음에 꼭 있어야 할 기능 3가지:
+      1. ___
+      2. ___
+      3. ___
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+      지금 어디서부터 시작하면 좋을까?
+      ```
+  - 첫마디 예시
+    - ```Text
+      나는 약속 날짜 잡기 웹사이트를 만들고 싶어.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+      어떤 서비스냐면:
+      친구들이 단톡방에서 "언제 돼?" 물어보는 게 너무 번거로워서,
+      링크 하나 공유하면 각자 되는 날짜에 투표할 수 있는 사이트야.
 
-## Learn More
+      주로 쓸 사람:
+      20~30대 직장인. 회원가입 없이 링크만 받으면 바로 쓸 수 있어야 해.
 
-To learn more about Next.js, take a look at the following resources:
+      처음에 꼭 있어야 할 기능 3가지:
+      1. 후보 날짜를 여러 개 올리면 참여자들이 되는 날짜에 체크
+      2. 회원가입 없이 이름만 입력하고 바로 참여
+      3. 투표 결과를 한눈에 볼 수 있는 화면
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+      사이트 홍보하는 랜딩페이지부터 만들어줘.
+      ```
+- 이후 에이전트에게 짧은 문장으로 피드백을 준다.
+  - 예시
+    - `이거 실행해볼 수 있어?`
+    - `글자 크기 좀 키워줘`
+    - `배경색을 파란색으로 바꿔줘`
+    - `로그인 기능 추가하고 싶어`
+    - `에러가 나는데 도와줘 (에러 메시지 붙여넣기)`
+    - `지금까지 만든 거 설명해줘`
+    - `아까 거 취소하고 다시 해줘`
