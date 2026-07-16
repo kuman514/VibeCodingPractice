@@ -1,4 +1,4 @@
-export type Operator = "+" | "-" | "*" | "/";
+export type Operator = '+' | '-' | '*' | '/';
 
 export interface CalculatorState {
   expression: string;
@@ -14,8 +14,8 @@ export interface CalculatorDisplayLines {
 }
 
 export const createInitialCalculatorState = (): CalculatorState => ({
-  expression: "",
+  expression: '',
   result: null,
-  prevExpression: "",
+  prevExpression: '',
   justEvaluated: false,
 });

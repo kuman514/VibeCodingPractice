@@ -1,10 +1,14 @@
 @keyframes eqPulse {
   0%,
   100% {
-    box-shadow: 0 max(4px, 1.4cqw) 0 #111, 0 0 0 rgba(163, 230, 53, 0);
+    box-shadow:
+      0 max(4px, 1.4cqw) 0 #111,
+      0 0 0 rgba(163, 230, 53, 0);
   }
   50% {
-    box-shadow: 0 max(4px, 1.4cqw) 0 #111, 0 0 5cqw var(--calc-glow, #a3e635);
+    box-shadow:
+      0 max(4px, 1.4cqw) 0 #111,
+      0 0 5cqw var(--calc-glow, #a3e635);
   }
 }
 
@@ -59,7 +63,8 @@
     opacity: 1;
   }
   100% {
-    transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) scale(1) rotate(var(--rot));
+    transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty)))
+      scale(1) rotate(var(--rot));
     opacity: 0;
   }
 }
@@ -88,7 +93,9 @@
 }
 
 .calculator-key {
-  transition: transform 0.06s, box-shadow 0.06s;
+  transition:
+    transform 0.06s,
+    box-shadow 0.06s;
 }
 
 .calculator-key:active {
