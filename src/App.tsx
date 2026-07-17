@@ -1,5 +1,5 @@
 import { CalculatorApp } from '@/adapters/ui/calculator/calculator-app';
 
-export default function Home() {
+export function App() {
   return <CalculatorApp />;
 }

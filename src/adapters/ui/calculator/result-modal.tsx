@@ -105,7 +105,7 @@ export function ResultModal({
         </div>
         <div
           style={{
-            fontFamily: "'DSEG7 Classic'",
+            fontFamily: "'DSEG7-Classic'",
             fontSize: 'clamp(40px,9vw,78px)',
             lineHeight: 1,
             color: 'var(--calc-accent, #a3e635)',

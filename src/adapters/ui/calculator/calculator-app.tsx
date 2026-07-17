@@ -1,5 +1,3 @@
-'use client';
-
 import { CSSProperties, useCallback, useEffect, useState } from 'react';
 
 import { CalculatorDisplay } from '@/adapters/ui/calculator/calculator-display';
@@ -40,7 +38,6 @@ const rootStyle: CSSPropertiesWithVars = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  padding: 20,
   overflow: 'hidden',
   background: 'radial-gradient(circle at 50% -10%, #1b2a12 0%, #0b0e0a 62%)',
   backgroundColor: '#0b0e0a',

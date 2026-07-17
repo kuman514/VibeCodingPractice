@@ -15,7 +15,7 @@ export function CalculatorDisplay({
         justifyContent: 'center',
         alignItems: 'flex-end',
         gap: '1.4cqw',
-        padding: '3cqw 4cqw',
+        padding: '0 4cqw',
         background: '#07120a',
         border: 'max(3px,1cqw) solid #073d13',
         borderRadius: '3.5cqw',
@@ -60,7 +60,7 @@ export function CalculatorDisplay({
       >
         <div
           style={{
-            fontFamily: "'DSEG7 Classic'",
+            fontFamily: "'DSEG7-Classic'",
             fontSize: '14cqw',
             lineHeight: 1,
             color: 'var(--calc-accent, #a3e635)',
